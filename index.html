@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Политика конфиденциальности - Somio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            padding: 40px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        h1 {
+            color: #667eea;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        
+        .lang-switcher {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: 2px solid #667eea;
+            background: white;
+            color: #667eea;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+        
+        .lang-btn:hover {
+            background: #667eea;
+            color: white;
+        }
+        
+        .lang-btn.active {
+            background: #667eea;
+            color: white;
+        }
+        
+        .content {
+            display: none;
+        }
+        
+        .content.active {
+            display: block;
+        }
+        
+        h2 {
+            color: #667eea;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+        
+        h3 {
+            color: #764ba2;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .date {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        
+        .contact {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        
+        .contact a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        .contact a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 1.5em;
+            }
+            
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .lang-switcher {
+                margin-top: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div>
+                <h1 id="title">Политика конфиденциальности Somio</h1>
+                <p class="date" id="date">Дата вступления в силу: 18 января 2026 года</p>
+            </div>
+            <div class="lang-switcher">
+                <button class="lang-btn active" onclick="switchLang('ru')">Русский</button>
+                <button class="lang-btn" onclick="switchLang('en')">English</button>
+            </div>
+        </div>
+        
+        <!-- Russian Content -->
+        <div id="content-ru" class="content active">
+            <p>Команда Somio ("мы", "нас", "наш") серьезно относится к защите ваших персональных данных. Настоящая Политика конфиденциальности описывает, как мы собираем, используем, обрабатываем и защищаем информацию, предоставляемую вами при использовании нашего приложения и связанных сервисов.</p>
+            
+            <h2>1. Собираемая информация</h2>
+            <p>В процессе использования приложения Somio мы можем собирать следующие категории данных:</p>
+            
+            <h3>1.1 Информация, предоставляемая пользователем</h3>
+            <ul>
+                <li><strong>Профильные данные:</strong> имя, дата рождения, рост, пол</li>
+                <li><strong>Записи веса:</strong> вес, дата и время измерения, примечания</li>
+                <li><strong>Измерения тела:</strong> обхват груди, талии, бедер, шеи, бицепсов, предплечий, бедер, голеней</li>
+                <li><strong>Фотографии:</strong> фотографии для визуального отслеживания прогресса (хранятся локально и в iCloud)</li>
+                <li><strong>Цели:</strong> целевой вес, целевая дата, тип цели (похудение, набор веса, поддержание)</li>
+                <li><strong>Настройки приложения:</strong> предпочтения пользователя, единицы измерения</li>
+            </ul>
+            
+            <h3>1.2 Автоматически собираемые данные</h3>
+            <ul>
+                <li><strong>Техническая информация:</strong> тип устройства, версия iOS, уникальные идентификаторы устройства</li>
+                <li><strong>Данные использования:</strong> информация о том, как вы взаимодействуете с приложением (для улучшения функциональности)</li>
+                <li><strong>Журналы и диагностика:</strong> данные об ошибках и производительности для улучшения работы приложения</li>
+            </ul>
+            
+            <h2>2. Цели обработки данных</h2>
+            <p>Собранная информация используется исключительно для следующих целей:</p>
+            <ul>
+                <li>Предоставление и персонализация сервисов приложения</li>
+                <li>Отслеживание прогресса веса и измерений тела</li>
+                <li>Расчет показателей здоровья (ИМТ, процент жира, калории, макроэлементы)</li>
+                <li>Визуализация данных в виде графиков и диаграмм</li>
+                <li>Синхронизация данных между вашими устройствами через iCloud</li>
+                <li>Обеспечение безопасности и защита персональных данных</li>
+                <li>Анализ и улучшение функциональности приложения</li>
+                <li>Соблюдение юридических обязательств</li>
+            </ul>
+            
+            <h2>3. Защита данных</h2>
+            <p>Мы реализуем комплексные меры безопасности, включая:</p>
+            <ul>
+                <li><strong>Локальное хранение:</strong> все данные хранятся локально на вашем устройстве с использованием SwiftData</li>
+                <li><strong>iCloud синхронизация:</strong> данные синхронизируются через защищенное соединение Apple iCloud с использованием CloudKit</li>
+                <li><strong>Биометрическая защита:</strong> опциональная защита данных с помощью Face ID или Touch ID</li>
+                <li><strong>Шифрование:</strong> все данные передаются и хранятся в зашифрованном виде</li>
+                <li><strong>Ограниченный доступ:</strong> данные доступны только вам и синхронизируются только на ваших устройствах, связанных с одним Apple ID</li>
+            </ul>
+            
+            <h2>4. Передача данных третьим сторонам</h2>
+            <p>Мы можем передавать информацию в следующих случаях:</p>
+            <ul>
+                <li><strong>Apple iCloud:</strong> для синхронизации данных между вашими устройствами. Данные хранятся в вашем личном iCloud аккаунте и недоступны нам</li>
+                <li><strong>Поставщикам услуг:</strong> только тем партнерам, которые помогают нам в работе приложения (аналитика, если используется), и только в анонимном виде</li>
+                <li><strong>По юридическим требованиям:</strong> когда это необходимо для соблюдения законов или ответа на правомерные запросы</li>
+                <li><strong>При корпоративных изменениях:</strong> в случае слияния, поглощения или продажи активов</li>
+            </ul>
+            <p><strong>Важно:</strong> Мы не продаем и не передаем ваши персональные данные третьим лицам для маркетинговых целей.</p>
+            
+            <h2>5. Международная передача данных</h2>
+            <p>Учитывая использование Apple iCloud для синхронизации, ваши данные могут обрабатываться на серверах Apple, расположенных за пределами вашей страны проживания. Мы гарантируем, что такая передача осуществляется с соблюдением соответствующих мер защиты, установленных Apple и применимым законодательством.</p>
+            
+            <h2>6. Срок хранения данных</h2>
+            <p>Мы храним ваши персональные данные только в течение срока, необходимого для достижения целей, указанных в настоящей Политике, или в соответствии с требованиями законодательства. Вы можете в любой момент удалить все данные через настройки приложения или удалив приложение с устройства.</p>
+            
+            <h2>7. Ваши права</h2>
+            <p>Вы имеете право:</p>
+            <ul>
+                <li>Запрашивать доступ к вашим персональным данным и их копию</li>
+                <li>Требовать исправления неточных или неполных данных</li>
+                <li>Запрашивать удаление ваших данных при отсутствии законных оснований для их хранения</li>
+                <li>Экспортировать ваши данные в формате JSON через функции приложения</li>
+                <li>Создавать резервные копии ваших данных</li>
+                <li>Ограничивать или возражать против обработки ваших данных в определенных случаях</li>
+                <li>Отзывать согласие на обработку, когда оно является правовым основанием для обработки</li>
+            </ul>
+            
+            <h2>8. Разрешения приложения</h2>
+            <p>Приложение Somio может запрашивать следующие разрешения:</p>
+            <ul>
+                <li><strong>Камера:</strong> для съемки фотографий записей веса (только с вашего разрешения)</li>
+                <li><strong>Фото-библиотека:</strong> для выбора фотографий из вашей библиотеки (только с вашего разрешения)</li>
+                <li><strong>Face ID / Touch ID:</strong> для защиты данных приложения (опционально, только с вашего разрешения)</li>
+                <li><strong>Уведомления:</strong> для напоминаний о записи веса (опционально, только с вашего разрешения)</li>
+            </ul>
+            <p>Все разрешения запрашиваются только при необходимости и могут быть отозваны в любой момент через настройки устройства.</p>
+            
+            <h2>9. Изменения в политике</h2>
+            <p>Мы оставляем за собой право периодически обновлять настоящую Политику конфиденциальности. Все изменения вступают в силу с момента их публикации в приложении и на этой странице. Мы рекомендуем регулярно проверять эту страницу для ознакомления с актуальной версией.</p>
+            
+            <h2>10. Контактная информация</h2>
+            <div class="contact">
+                <p>Если у вас есть вопросы относительно нашей Политики конфиденциальности или вы хотите реализовать свои права в отношении персональных данных, пожалуйста, свяжитесь с нами:</p>
+                <p><strong>Электронная почта:</strong> <a href="mailto:pavel.k.dev@yandex.ru">pavel.k.dev@yandex.ru</a></p>
+            </div>
+        </div>
+        
+        <!-- English Content -->
+        <div id="content-en" class="content">
+            <p>The Somio team ("we", "us", "our") takes the protection of your personal data seriously. This Privacy Policy describes how we collect, use, process, and protect information you provide when using our application and related services.</p>
+            
+            <h2>1. Information We Collect</h2>
+            <p>In the course of using the Somio application, we may collect the following categories of data:</p>
+            
+            <h3>1.1 Information Provided by the User</h3>
+            <ul>
+                <li><strong>Profile Data:</strong> name, date of birth, height, gender</li>
+                <li><strong>Weight Entries:</strong> weight, date and time of measurement, notes</li>
+                <li><strong>Body Measurements:</strong> chest, waist, hips, neck, biceps, forearms, thighs, calves circumference</li>
+                <li><strong>Photos:</strong> photos for visual progress tracking (stored locally and in iCloud)</li>
+                <li><strong>Goals:</strong> target weight, target date, goal type (lose weight, gain weight, maintain)</li>
+                <li><strong>App Settings:</strong> user preferences, measurement units</li>
+            </ul>
+            
+            <h3>1.2 Automatically Collected Data</h3>
+            <ul>
+                <li><strong>Technical Information:</strong> device type, iOS version, unique device identifiers</li>
+                <li><strong>Usage Data:</strong> information about how you interact with the application (to improve functionality)</li>
+                <li><strong>Logs and Diagnostics:</strong> error and performance data to improve application performance</li>
+            </ul>
+            
+            <h2>2. Purposes of Data Processing</h2>
+            <p>The collected information is used exclusively for the following purposes:</p>
+            <ul>
+                <li>Providing and personalizing application services</li>
+                <li>Tracking weight and body measurements progress</li>
+                <li>Calculating health indicators (BMI, body fat percentage, calories, macronutrients)</li>
+                <li>Visualizing data in charts and graphs</li>
+                <li>Synchronizing data between your devices via iCloud</li>
+                <li>Ensuring security and protecting personal data</li>
+                <li>Analyzing and improving application functionality</li>
+                <li>Complying with legal obligations</li>
+            </ul>
+            
+            <h2>3. Data Protection</h2>
+            <p>We implement comprehensive security measures, including:</p>
+            <ul>
+                <li><strong>Local Storage:</strong> all data is stored locally on your device using SwiftData</li>
+                <li><strong>iCloud Sync:</strong> data is synchronized through Apple's secure iCloud connection using CloudKit</li>
+                <li><strong>Biometric Protection:</strong> optional data protection using Face ID or Touch ID</li>
+                <li><strong>Encryption:</strong> all data is transmitted and stored in encrypted form</li>
+                <li><strong>Limited Access:</strong> data is accessible only to you and synchronized only on your devices linked to the same Apple ID</li>
+            </ul>
+            
+            <h2>4. Data Sharing with Third Parties</h2>
+            <p>We may share information in the following cases:</p>
+            <ul>
+                <li><strong>Apple iCloud:</strong> for synchronizing data between your devices. Data is stored in your personal iCloud account and is not accessible to us</li>
+                <li><strong>Service Providers:</strong> only to partners who help us operate the application (analytics, if used), and only in anonymized form</li>
+                <li><strong>Legal Requirements:</strong> when necessary to comply with laws or respond to lawful requests</li>
+                <li><strong>Corporate Changes:</strong> in case of merger, acquisition, or sale of assets</li>
+            </ul>
+            <p><strong>Important:</strong> We do not sell or share your personal data with third parties for marketing purposes.</p>
+            
+            <h2>5. International Data Transfer</h2>
+            <p>Given the use of Apple iCloud for synchronization, your data may be processed on Apple servers located outside your country of residence. We guarantee that such transfer is carried out in compliance with appropriate protection measures established by Apple and applicable legislation.</p>
+            
+            <h2>6. Data Retention Period</h2>
+            <p>We store your personal data only for the period necessary to achieve the purposes specified in this Policy, or in accordance with legal requirements. You can delete all data at any time through the application settings or by deleting the application from your device.</p>
+            
+            <h2>7. Your Rights</h2>
+            <p>You have the right to:</p>
+            <ul>
+                <li>Request access to your personal data and a copy thereof</li>
+                <li>Request correction of inaccurate or incomplete data</li>
+                <li>Request deletion of your data when there are no legal grounds for storage</li>
+                <li>Export your data in JSON format through application features</li>
+                <li>Create backups of your data</li>
+                <li>Restrict or object to processing of your data in certain cases</li>
+                <li>Withdraw consent to processing when it is the legal basis for processing</li>
+            </ul>
+            
+            <h2>8. Application Permissions</h2>
+            <p>The Somio application may request the following permissions:</p>
+            <ul>
+                <li><strong>Camera:</strong> to take photos of weight entries (only with your permission)</li>
+                <li><strong>Photo Library:</strong> to select photos from your library (only with your permission)</li>
+                <li><strong>Face ID / Touch ID:</strong> to protect application data (optional, only with your permission)</li>
+                <li><strong>Notifications:</strong> for weight entry reminders (optional, only with your permission)</li>
+            </ul>
+            <p>All permissions are requested only when necessary and can be revoked at any time through device settings.</p>
+            
+            <h2>9. Policy Changes</h2>
+            <p>We reserve the right to periodically update this Privacy Policy. All changes take effect from the moment of publication in the application and on this page. We recommend regularly checking this page to familiarize yourself with the current version.</p>
+            
+            <h2>10. Contact Information</h2>
+            <div class="contact">
+                <p>If you have questions regarding our Privacy Policy or wish to exercise your rights regarding personal data, please contact us:</p>
+                <p><strong>Email:</strong> <a href="mailto:pavel.k.dev@yandex.ru">pavel.k.dev@yandex.ru</a></p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function switchLang(lang) {
+            // Hide all content
+            document.querySelectorAll('.content').forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // Show selected language content
+            document.getElementById('content-' + lang).classList.add('active');
+            
+            // Update button states
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+            
+            // Update title and date
+            if (lang === 'ru') {
+                document.getElementById('title').textContent = 'Политика конфиденциальности Somio';
+                document.getElementById('date').textContent = 'Дата вступления в силу: 18 января 2026 года';
+                document.documentElement.lang = 'ru';
+            } else {
+                document.getElementById('title').textContent = 'Somio Privacy Policy';
+                document.getElementById('date').textContent = 'Effective Date: January 18, 2026';
+                document.documentElement.lang = 'en';
+            }
+        }
+    </script>
+</body>
+</html>
